@@ -7,7 +7,7 @@ const SwiperNavButton = () => {
     const swiper = useSwiper();
 
   return (
-    <div className="mx-auto flex flex-row justify-center items-center gap-x-16 py-8">
+    <div className="mx-auto flex flex-row justify-center items-center gap-x-16 py-3 md:py-8">
       <button onClick={() => swiper.slidePrev()}> 
         <Image
                 src={Prev}
@@ -15,7 +15,7 @@ const SwiperNavButton = () => {
                 width={66}
                 priority={true}
                 alt=""
-                
+                className="w-10/12 md:w-auto"
               /></button>
       <button onClick={() => swiper.slideNext()}>
       <Image
@@ -24,7 +24,7 @@ const SwiperNavButton = () => {
                 width={66}
                 priority={true}
                 alt=""
-                
+                className="w-10/12 md:w-auto"
               />
       </button>
     </div>

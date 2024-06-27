@@ -15,7 +15,7 @@ const Navbar = () => {
   };
   return (
     <motion.div className="bg-[#F9F9F9] shadow-sm">
-      <div className=" mx-auto flex justify-between px-4 md:px-0 w-full md:11/12 lg:w-10/12 xl:w-10/12 xxl:w-9/12 pt-6 pb-4 ">
+      <div className=" mx-auto flex justify-between px-6 md:px-0 w-full md:11/12 lg:w-10/12 xl:w-10/12 xxl:w-9/12 pt-6 pb-4 ">
         <div className="flex flex-row gap-x-8">
           <div className="flex justify-center items-center cursor-pointer">
             <Link href="/">
@@ -145,7 +145,7 @@ const Navbar = () => {
                   </Link>
                 </div>
                 <div className="mx-auto flex flex-row justify-center items-center mt-14 gap-x-4">
-                  <button className="flex items-center cursor-pointer bg-[#2A2A80] text-base px-5 py-3 text-white rounded-md">
+                  <button className="flex items-center cursor-pointer bg-[#20888F]  text-base px-5 py-3 text-white rounded-md">
                     <Link
                       href=""
                       onClick={handleToggle}
@@ -153,7 +153,7 @@ const Navbar = () => {
                      SINC with us
                     </Link>
                   </button>
-                  <button className="flex items-center bg-[#D1563B] text-base px-5 py-3 text-white rounded-md cursor-pointer">
+                  <button className="flex items-center bg-[#303030] text-base px-5 py-3 text-white rounded-md cursor-pointer">
                     <Link
                       href=""
                       onClick={handleToggle}

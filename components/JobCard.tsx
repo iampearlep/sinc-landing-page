@@ -147,43 +147,43 @@ const JobCard = () => {
                 <p className="text-[13px] font-medium">{data.about}</p>
               <h4 className="text-[16px] font-semibold">{data.role}</h4>
               <div className="grid grid-cols-2">
-                <div className="flex flex-col gap-y-3">
+                <div className="flex flex-col gap-y-5 md:gap-y-3">
                    <div>
-                   <h5 className="uppercase text-[#a4a4a4] text-[15px]">Location</h5>
-                   <p className="text-[14px] font-medium">{data.location}</p>
+                   <h5 className="uppercase text-[#a4a4a4] text-[14px] md:text-[15px]">Location</h5>
+                   <p className="text-[13px] md:text-[14px] font-medium">{data.location}</p>
                    </div>
                    <div>
-                    <h5 className="uppercase text-[#a4a4a4] text-[15px]">Equity</h5>
-                    <p className="text-[14px] font-medium">{data.equity}</p>
+                    <h5 className="uppercase text-[#a4a4a4] text-[14px] md:text-[15px]">Equity</h5>
+                    <p className="text-[13px] md:text-[14px] font-medium">{data.equity}</p>
                    </div>
                    <div>
-                    <h5 className="uppercase text-[#a4a4a4] text-[15px]">Deadline</h5>
-                    <p className="text-[14px] font-medium">{data.deadline}</p>
+                    <h5 className="uppercase text-[#a4a4a4] text-[14px] md:text-[15px]">Deadline</h5>
+                    <p className="text-[13px] md:text-[14px] font-medium">{data.deadline}</p>
                    </div>
                 </div>
-                <div className="text-end">
+                <div className="text-end flex flex-col gap-y-5 md:gap-y-3">
                    <div>
-                   <h5 className="uppercase text-[#a4a4a4] text-[15px]">Industry</h5>
-                   <p className="text-[14px] font-medium">{data.industry}</p>
+                   <h5 className="uppercase text-[#a4a4a4] text-[14px] md:text-[15px]">Industry</h5>
+                   <p className="text-[13px] md:text-[14px] font-medium">{data.industry}</p>
                    </div>
                    <div>
-                    <h5 className="uppercase text-[#a4a4a4] text-[15px]">Stipend</h5>
-                    <p className="text-[14px] font-medium">{data.stipend}</p>
+                    <h5 className="uppercase text-[#a4a4a4] text-[14px] md:text-[15px]">Stipend</h5>
+                    <p className="text-[13px] md:text-[14px] font-medium">{data.stipend}</p>
                    </div>
                    <div>
-                    <h5 className="uppercase text-[#a4a4a4] text-[15px]">Role Type</h5>
-                    <p className="text-[14px] font-medium">{data.type}</p>
+                    <h5 className="uppercase text-[#a4a4a4] text-[14px] md:text-[15px]">Role Type</h5>
+                    <p className="text-[13px] md:text-[14px] font-medium">{data.type}</p>
                    </div>
                 </div>
               </div>
-              <button className="bg-[#303030] text-[#ffffff]  px-2 py-2 rounded-full w-9/12 text-[15px]">View Details</button>
+              <button className="bg-[#303030] text-[#ffffff]  px-2 py-2 rounded-full w-9/12 text-[14px] md:text-[15px]">View Details</button>
              </div>
           </div>
           
           </SwiperSlide>
       )
   })}
-  <div className="flex justify-center items-center mx-auto py-10">
+  <div className="hidden md:flex justify-center items-center mx-auto py-10">
         <Link href="/"  className="flex flex-row underline font-semibold text-[15px] text-center mx-auto items-center gap-x-1">See More Equity Jobs <IoIosArrowRoundForward className="w-5 h-6" /></Link>
         </div>
    </Swiper>

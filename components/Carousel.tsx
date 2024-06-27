@@ -60,21 +60,21 @@ const Carousel = () => {
         {hero.map((data) => {
             return (
                 <SwiperSlide key={data.id}>
-                <div key={data.id} className="grid grid-cols-2 w-full h-[432px] overflow-hidden relative">
-                  <div className="flex flex-col w-2/3 py-28 items-start mx-auto">
-                    <h2 className="w-12/12 font-semibold text-3xl leading-normal text-[#212121] ">{data.title}</h2>
-                    <div className="w-11/12 pt-2 pb-6 text-xl flex flex-col gap-y-4 text-[#4E4E4E]">
+                <div key={data.id} className="grid grid-cols-1 md:grid-cols-2 w-full h-auto md:h-[432px] overflow-hidden relative">
+                  <div className="flex flex-col w-full py-10 px-6 md:w-9/12 md:py-24 items-start mx-auto">
+                    <h2 className="w-12/12 font-semibold text-2xl md:text-3xl leading-normal text-[#212121] ">{data.title}</h2>
+                    <div className="w-11/12 pt-2 pb-6 text-[15px] md:text-xl flex flex-col gap-y-1 md:gap-y-4 text-[#4E4E4E]">
                         <p>{data.text}</p>
                         {data.text1 && <p>{data.text1}</p>}
                         {data.text2 && <p>{data.text2}</p>}
                     </div>
-                    <button className="bg-[#303030] cursor-pointer hidden lg:flex items-center px-6 py-3  text-white rounded-full">
+                    <button className="bg-[#303030] cursor-pointer flex items-center px-6 py-2 md:py-3  text-white rounded-full">
             <Link href=""> 
             SINC with us
             </Link>
           </button>
                   </div>
-                  <div className="flex ">
+                  <div className="hidden md:flex ">
                   <Image src={data.image} height={590} width={703} alt="" priority className="w-full h-full object-cover object-center" />
                   {data.image2 && <Image src={data.image2} height={263} width={167} priority alt="" className="absolute z-10 -ml-20 mt-24" />}
                   </div>

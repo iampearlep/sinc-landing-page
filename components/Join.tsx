@@ -55,13 +55,14 @@ const progress: Progress[]  = [
 const Join = () => {
   return (
     <div className="bg-[#F9F9F9] py-12">
-      <div className='flex flex-col w-10/12 justify-center items-center mx-auto'>
-        <div  className='flex flex-col justify-center items-center text-center w-9/12'>
-       <h2> How It Works</h2>
-       <p> Our EIR program is our structured 3 months un-paid program designed to help us have a pipeline of business and technical cofounders who can run the venture of choice as CEO & CTO owning 20% equity each.</p>
+      <div className='flex flex-col w-11/12 md:w-10/12 justify-center items-center mx-auto'>
+        <div  className='hidden md:flex flex-col justify-center items-center text-center w-11/12 md:w-9/12'>
+       <h2 className='text-xl md:text-5xl font-semibold md:w-10/12 text-center pb-8 leading-tight'> How It Works</h2>
+       <p className="text-[14px]"> Our EIR program is our structured 3 months un-paid program designed to help us have a pipeline of business and technical cofounders who can run the venture of choice as CEO & CTO owning 20% equity each.</p>
         </div>
+        <h2 className='block md:hidden text-xl font-semibold text-centerleading-tight'>Service Incubation Process</h2>
       </div>
-      <div className="py-20 w-10/12 mx-auto">
+      <div className="py-10 md:py-20 w-11/12 md:w-10/12 mx-auto">
           <Swiper
         cssMode={true}
         mousewheel={true}
@@ -98,7 +99,7 @@ const Join = () => {
         {progress.map((data) => {
             return (
                 <SwiperSlide key={data.id}>
-                <div key={data.id} className="bg-[#ffffff] h-[420px] flex flex-col justify-center items-center rounded-xl" >
+                <div key={data.id} className="bg-[#ffffff] py-8 md:py-0 md:h-[420px] flex flex-col justify-center items-center rounded-xl" >
                     <div className="flex flex-col gap-y-3 items-start px-5">
                     <div>
                     <Image
@@ -111,19 +112,19 @@ const Join = () => {
               />
                     </div>
                   <div>
-                  <h3 className="text-[16px] font-semibold">{data.title}</h3>
+                  <h3 className="text-[14px] md:text-[16px] font-semibold">{data.title}</h3>
                   </div>
                  <div className="flex flex-col gap-y-2">
-                 <p>{data.text}</p>
-                 <p>{data.text2}</p>
+                 <p className="text-[14px] md:text-[16px]">{data.text}</p>
+                 <p className="text-[14px] md:text-[16px]">{data.text2}</p>
                  </div>
                     </div>
                 </div>
                 </SwiperSlide>
             )
         })}
-        <div className="flex justify-center items-center mx-auto py-10">
-        <Link href="/"  className="flex flex-row underline font-semibold text-[15px] text-center mx-auto items-center gap-x-1">View All Companies <IoIosArrowRoundForward className="w-5 h-6" /></Link>
+        <div className="hidden md:flex justify-center items-center mx-auto py-3 md:py-10">
+        <Link href="/"  className="flex flex-row underline font-semibold text-[14px] md:text-[15px] text-center mx-auto items-center gap-x-1">View All Companies <IoIosArrowRoundForward className="w-5 h-6" /></Link>
         </div>
         <SwiperNavButton />
          </Swiper>

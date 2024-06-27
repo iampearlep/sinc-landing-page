@@ -13,24 +13,43 @@ import Newsletter from "@/components/Newsletter";
 import Portfolio from "@/components/Portfolio";
 import Quote from "@/components/Quote";
 import Service from "@/components/Service";
+import Vision from "@/components/Vision";
 
 export default function Home() {
   return (
     <main>
       <Carousel />
       <Quote />
+      <div className="hidden md:block">
       <Network />
+      </div>
+      <div className="block md:hidden">
+        <Vision />
+      </div>
+     
+       
       <AOF />
+       
       <Innovations />
+       
       <Service />
+      
       <Portfolio />
+      
       <Cofound />
+     
       <Join />
+      
       <Investors />
+       
       <Jobs />
+      
       <Blog />
-      <Featured />
-      <CTA />
+     
+     <div className="hidden md:block">
+     <Featured />
+     <CTA />
+     </div>
       <Newsletter />
     </main>
   );
