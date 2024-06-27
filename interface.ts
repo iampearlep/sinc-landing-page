@@ -7,3 +7,11 @@ export interface Hero {
     image: any;
     image2?: any;
 }
+
+export interface Progress {
+    id: number;
+    icon: any;
+    title: string;
+    text: string;
+    text2: string;
+}
