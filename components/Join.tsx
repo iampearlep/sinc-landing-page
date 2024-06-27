@@ -99,7 +99,7 @@ const Join = () => {
         {progress.map((data) => {
             return (
                 <SwiperSlide key={data.id}>
-                <div key={data.id} className="bg-[#ffffff] py-8 md:py-0 md:h-[420px] flex flex-col justify-center items-center rounded-xl" >
+                <div key={data.id} className="bg-[#ffffff] py-8 md:py-0 md:h-[435px] flex flex-col justify-center items-center rounded-xl" >
                     <div className="flex flex-col gap-y-3 items-start px-5">
                     <div>
                     <Image
